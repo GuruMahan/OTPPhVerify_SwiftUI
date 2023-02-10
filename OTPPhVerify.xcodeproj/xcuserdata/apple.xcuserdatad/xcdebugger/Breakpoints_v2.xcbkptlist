@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B2FFF351-778A-49DA-A24A-4FEFF6064CAE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EEAD8BE9-493C-4C24-B216-D75A40127A34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OTPPhVerify/LogInView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "EEAD8BE9-493C-4C24-B216-D75A40127A34 - 6656489e865ab441"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.labelsHidden() -&gt; some&gt;&gt;.0 in OTPPhVerify.LogInView.body.getter : some"
+                  moduleName = "OTPPhVerify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/GuruUI/OTPPhVerify/OTPPhVerify/LogInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "283">
+               </Location>
+               <Location
+                  uuid = "EEAD8BE9-493C-4C24-B216-D75A40127A34 - b8c874691212af9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in closure #2 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.labelsHidden() -&gt; some&gt;&gt;.0 in OTPPhVerify.LogInView.body.getter : some"
+                  moduleName = "OTPPhVerify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/GuruUI/OTPPhVerify/OTPPhVerify/LogInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "71">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A0AD653-3E45-4531-9985-C397A05FC92D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OTPPhVerify/OTPViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "verifyOTP()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
