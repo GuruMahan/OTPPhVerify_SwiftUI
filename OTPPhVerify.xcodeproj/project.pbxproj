@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1841642A299632370094771A /* OTPPhVerifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18416429299632370094771A /* OTPPhVerifyApp.swift */; };
-		1841642C299632370094771A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841642B299632370094771A /* ContentView.swift */; };
 		1841642E299632390094771A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1841642D299632390094771A /* Assets.xcassets */; };
 		18416431299632390094771A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18416430299632390094771A /* Preview Assets.xcassets */; };
+		18416438299632520094771A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18416437299632520094771A /* ContentView.swift */; };
+		1841643A2996325F0094771A /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184164392996325F0094771A /* OTPVerificationView.swift */; };
+		1841643C299632640094771A /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841643B299632640094771A /* OTPViewModel.swift */; };
+		1841643E2996326C0094771A /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841643D2996326C0094771A /* LogInView.swift */; };
+		18416440299632F20094771A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1841643F299632F20094771A /* GoogleService-Info.plist */; };
+		184164432996336C0094771A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 184164422996336C0094771A /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18416426299632370094771A /* OTPPhVerify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPPhVerify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18416429299632370094771A /* OTPPhVerifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPPhVerifyApp.swift; sourceTree = "<group>"; };
-		1841642B299632370094771A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1841642D299632390094771A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18416430299632390094771A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18416437299632520094771A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../FireBaseOTPVerificationPOC/FireBaseOTPVerificationPOC/ContentView.swift; sourceTree = "<group>"; };
+		184164392996325F0094771A /* OTPVerificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
+		1841643B299632640094771A /* OTPViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		1841643D2996326C0094771A /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		1841643F299632F20094771A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18416444299634670094771A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184164432996336C0094771A /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +62,13 @@
 		18416428299632370094771A /* OTPPhVerify */ = {
 			isa = PBXGroup;
 			children = (
+				18416444299634670094771A /* Info.plist */,
+				1841643F299632F20094771A /* GoogleService-Info.plist */,
 				18416429299632370094771A /* OTPPhVerifyApp.swift */,
-				1841642B299632370094771A /* ContentView.swift */,
+				18416437299632520094771A /* ContentView.swift */,
+				184164392996325F0094771A /* OTPVerificationView.swift */,
+				1841643B299632640094771A /* OTPViewModel.swift */,
+				1841643D2996326C0094771A /* LogInView.swift */,
 				1841642D299632390094771A /* Assets.xcassets */,
 				1841642F299632390094771A /* Preview Content */,
 			);
@@ -83,6 +99,9 @@
 			dependencies = (
 			);
 			name = OTPPhVerify;
+			packageProductDependencies = (
+				184164422996336C0094771A /* FirebaseAuth */,
+			);
 			productName = OTPPhVerify;
 			productReference = 18416426299632370094771A /* OTPPhVerify.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 1841641D299632370094771A;
+			packageReferences = (
+				184164412996336C0094771A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 18416427299632370094771A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +149,7 @@
 			files = (
 				18416431299632390094771A /* Preview Assets.xcassets in Resources */,
 				1841642E299632390094771A /* Assets.xcassets in Resources */,
+				18416440299632F20094771A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1841642C299632370094771A /* ContentView.swift in Sources */,
+				1841643E2996326C0094771A /* LogInView.swift in Sources */,
+				1841643C299632640094771A /* OTPViewModel.swift in Sources */,
+				1841643A2996325F0094771A /* OTPVerificationView.swift in Sources */,
 				1841642A299632370094771A /* OTPPhVerifyApp.swift in Sources */,
+				18416438299632520094771A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +296,7 @@
 				DEVELOPMENT_TEAM = SY4CHD2YQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTPPhVerify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +326,7 @@
 				DEVELOPMENT_TEAM = SY4CHD2YQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTPPhVerify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		184164412996336C0094771A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		184164422996336C0094771A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184164412996336C0094771A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1841641E299632370094771A /* Project object */;
 }
