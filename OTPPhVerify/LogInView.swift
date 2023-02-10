@@ -51,13 +51,13 @@ struct LogInView: View {
                     }
                 
             }
-           // .disabled(otpModel.code == "" || otpModel.number == "")
+           .disabled(otpModel.code == "" || otpModel.number == "")
             .opacity(otpModel.code == "" || otpModel.number == "" ? 0.4 : 1)
         }
         .navigationTitle("Login")
         .padding()
         .frame(maxHeight: .infinity, alignment: .top)
-        background{
+        .background{
             NavigationLink(tag: "VERIFICATION", selection: $otpModel.navigationTag) {
                 OTPVerificationView()
                     .environmentObject(otpModel)

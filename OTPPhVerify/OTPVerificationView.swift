@@ -66,6 +66,7 @@ struct OTPVerificationView: View {
         }
         return false
     }
+    
   func OTpCondition(value:[String]){
       
    //Checking if OTP is pressed
@@ -98,13 +99,16 @@ struct OTPVerificationView: View {
         }
                 for index2 in 0..<6 {
                     if value[index2].count > 1{
-                        viewModel.otpField[index2] = String(value[index2].last!)
+                        if let lst = value[index2].last{
+                            viewModel.otpField[index2] = String(lst)
+                        }
                     }
                 }
     }
+    
     @ViewBuilder func OTpCondition()-> some View{
         HStack(spacing: 14){
-            ForEach(0..<6,id: \.self){index in
+            ForEach(0..<6,id: \.self){ index in
                 VStack(spacing: 8){
                     TextField("", text: $viewModel.otpField[index])
                         .keyboardType(.numberPad)
@@ -150,5 +154,4 @@ enum OTPField{
     case field4
     case field5
     case field6
-    case field7
 }

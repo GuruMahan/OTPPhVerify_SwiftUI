@@ -7,17 +7,29 @@
 
 import SwiftUI
 import Firebase
+
 @main
 struct OTPPhVerifyApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
+    @AppStorage("log_status") var log_status = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                if log_status{
+                    Text("Home")
+                        .navigationTitle("Home")
+                }
+                else{
+                LogInView()
+                }
+               
+            }
+          
+        }
         }
     }
-}
+
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -26,4 +38,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
     return true
   }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) async -> UIBackgroundFetchResult {
+        return .noData
+    }
 }

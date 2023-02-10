@@ -47,13 +47,19 @@ class OTPViewModel: ObservableObject {
     }
     func  verifyOTP() async{
         do{
-            isLoading = true
-            let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationCode, verificationCode: otpText)
-            let _ = try await Auth.auth().signIn(with: credential)
-            DispatchQueue.main.async {[self] in
-                isLoading = false
-                log_status = true
+            DispatchQueue.main.async {
+                self.isLoading = true
             }
+          
+            var otpString = ""
+            for index in otpField {
+               otpString += index
+            }
+                let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationCode, verificationCode: otpString)
+                let _ = try await Auth.auth().signIn(with: credential)
+                DispatchQueue.main.async {[self] in
+                    isLoading = false
+                }
         }
         catch {
             handelError(error: error.localizedDescription)

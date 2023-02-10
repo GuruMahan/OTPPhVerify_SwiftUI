@@ -10,7 +10,6 @@
 		1841642A299632370094771A /* OTPPhVerifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18416429299632370094771A /* OTPPhVerifyApp.swift */; };
 		1841642E299632390094771A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1841642D299632390094771A /* Assets.xcassets */; };
 		18416431299632390094771A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18416430299632390094771A /* Preview Assets.xcassets */; };
-		18416438299632520094771A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18416437299632520094771A /* ContentView.swift */; };
 		1841643A2996325F0094771A /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184164392996325F0094771A /* OTPVerificationView.swift */; };
 		1841643C299632640094771A /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841643B299632640094771A /* OTPViewModel.swift */; };
 		1841643E2996326C0094771A /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841643D2996326C0094771A /* LogInView.swift */; };
@@ -23,7 +22,6 @@
 		18416429299632370094771A /* OTPPhVerifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPPhVerifyApp.swift; sourceTree = "<group>"; };
 		1841642D299632390094771A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18416430299632390094771A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		18416437299632520094771A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../FireBaseOTPVerificationPOC/FireBaseOTPVerificationPOC/ContentView.swift; sourceTree = "<group>"; };
 		184164392996325F0094771A /* OTPVerificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
 		1841643B299632640094771A /* OTPViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
 		1841643D2996326C0094771A /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				18416444299634670094771A /* Info.plist */,
 				1841643F299632F20094771A /* GoogleService-Info.plist */,
 				18416429299632370094771A /* OTPPhVerifyApp.swift */,
-				18416437299632520094771A /* ContentView.swift */,
 				184164392996325F0094771A /* OTPVerificationView.swift */,
 				1841643B299632640094771A /* OTPViewModel.swift */,
 				1841643D2996326C0094771A /* LogInView.swift */,
@@ -164,7 +161,6 @@
 				1841643C299632640094771A /* OTPViewModel.swift in Sources */,
 				1841643A2996325F0094771A /* OTPVerificationView.swift in Sources */,
 				1841642A299632370094771A /* OTPPhVerifyApp.swift in Sources */,
-				18416438299632520094771A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,11 +293,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OTPPhVerify/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,11 +325,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OTPPhVerify/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
